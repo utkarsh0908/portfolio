@@ -1,10 +1,73 @@
+@import "../../global.scss";
 .intro{
-    background-color: white;
+    background-color: #3AAFA9;
     display: flex;
     .left{
         flex: 1;
+        display: flex;
+        
+        .imgcontainer{
+            display: flex;
+            height: 99%;
+            width: 90%;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+            margin: 5px 50px 0 50px;
+
+            img{
+                height: 99%;
+            }
+        }
     }
     .right{
         flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .inside{
+
+            .down{
+                font-size: 50px;
+                color: $secondary-color;
+                animation: blink 3s infinite;
+            }
+            @keyframes blink {
+                50%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 100%;
+                }
+            }
+            h1{
+                font-size: 60px;
+                color: white;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            .ityped-cursor {
+                font-size: 2.2rem;
+                opacity: 1;
+                -webkit-animation: blinkCur 0.5s infinite;
+                -moz-animation: blinkCur 0.5s infinite;
+                animation: blinkCur 0.5s infinite;
+                animation-direction: alternate;
+                color: white;
+            }
+             
+            @keyframes blinkCur {
+                50% {
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+        }
     }
 }

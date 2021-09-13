@@ -1,6 +1,9 @@
 import React from 'react';
 import "./topbar.scss"
-import {Call, Mail} from '@material-ui/icons';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 export default function Topbar({menuopen, setmenuopen}) {
     return (
@@ -9,16 +12,22 @@ export default function Topbar({menuopen, setmenuopen}) {
             <div className="inside">
                 <div className="left">
                     <a href="#intro" className="logo">Portfolio.</a>
-                    <div className="itemcontainer">
-                        <Call/>
-                        <span>+91 8862925042</span>
+                    
                     </div>
-                    <div className="itemcontainer">
-                        <Mail/>
-                        <span>utkarsh13.ugec20@iiitranchi.ac.in</span>
-                    </div>
-                </div>
+                
                 <div className="right">
+                <div className="itemcontainer">
+                        <InstagramIcon/>  
+                    </div>
+                    <div className="itemcontainer">
+                        <GitHubIcon/>
+                    </div>
+                    <div className="itemcontainer">
+                        <LinkedInIcon/>
+                    </div>
+                    <div className="itemcontainer">
+                        <TwitterIcon/>
+                    </div>
                     <div className="hamburger" onClick={()=>{setmenuopen(!menuopen)}}>
                         <span className="line1"></span>
                         <span className="line2"></span>

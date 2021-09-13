@@ -6,8 +6,8 @@ const Sidebar = ({menuopen, setmenuopen}) =>{
         <div className={"sidebar " + (menuopen && "active")}>
             <ul>
                 <a href="#intro" onClick={()=>setmenuopen(false)}> Home</a>
-                <a href="#portfolio" onClick={()=>setmenuopen(false)}> Portfolio</a>
-                <a href="#testimonial" onClick={()=>setmenuopen(false)}> Testimonials</a>
+                <a href="#portfolio" onClick={()=>setmenuopen(false)}> About Me</a>
+                <a href="#skills" onClick={()=>setmenuopen(false)}> Skills</a>
                 <a href="#works" onClick={()=>setmenuopen(false)}> Works</a>
                 <a href="#contact" onClick={()=>setmenuopen(false)}> Contact</a>
             </ul>   

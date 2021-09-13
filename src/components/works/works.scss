@@ -1,3 +1,29 @@
-.contact{
-    background-color: blue;
+.works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    h1{
+        font-size: 40px;
+        margin: 4rem 0 2rem 0;
+        overflow-y: hidden;
+    }
+    .inside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .slider{
+            .workSlider{
+                img{
+                    width: 600px;
+                    height:300px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 }
