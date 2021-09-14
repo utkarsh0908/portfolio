@@ -24,22 +24,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         .left{
             display: flex;
             
         }
-
         .right{
             display: flex;
             flex-direction: row;
-
             .itemcontainer{
                 display: flex;
                 align-items: center;
                 font-size: 12px;
                 font-weight: 700;
                 margin-right: 4rem;
+                color: inherit;
             }
             .hamburger{
                 height: 26px;
@@ -55,7 +53,9 @@
                     background-color: $secondary-color;
                     transform-origin: left;
                     transition: all 1.5s ease;
-                }
+                
+                
+            }
             }
         }
     }
@@ -85,5 +85,27 @@
                 }
             }
         }
+    }
+}
+
+
+#insta{
+    &:hover{
+        color: #ce1ebf;
+    }
+}
+#git{
+    &:hover{
+        color: rgb(73, 73, 73);
+    }
+    
+}
+#linked{
+    &:hover{
+        color: rgb(0, 0, 248);
+    }
+}#twitter{
+    &:hover{
+        color: rgb(31, 153, 194);
     }
 }

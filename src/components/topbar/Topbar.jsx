@@ -16,18 +16,18 @@ export default function Topbar({menuopen, setmenuopen}) {
                     </div>
                 
                 <div className="right">
-                <div className="itemcontainer">
+                <a href="https://www.instagram.com/utkarsh_0901/" target=" " className="itemcontainer" id="insta">
                         <InstagramIcon/>  
-                    </div>
-                    <div className="itemcontainer">
+                    </a>
+                    <a href="https://github.com/utkarsh0908" target=" " className="itemcontainer" id="git">
                         <GitHubIcon/>
-                    </div>
-                    <div className="itemcontainer">
+                    </a>
+                    <a a href="https://www.linkedin.com/in/utkarsh-singh-432228213/" target=" " className="itemcontainer" id="linked">
                         <LinkedInIcon/>
-                    </div>
-                    <div className="itemcontainer">
+                    </a>
+                    <a href="https://twitter.com/Utkarsh70783608" target=" " className="itemcontainer" id="twitter">
                         <TwitterIcon/>
-                    </div>
+                    </a>
                     <div className="hamburger" onClick={()=>{setmenuopen(!menuopen)}}>
                         <span className="line1"></span>
                         <span className="line2"></span>
