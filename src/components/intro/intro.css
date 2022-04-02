@@ -1,0 +1,118 @@
+.intro {
+  background-color: #3AAFA9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro .left .imgcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 99%;
+  width: 90%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+  margin: 5px 50px 0 50px;
+}
+
+.intro .left .imgcontainer img {
+  height: 99%;
+}
+
+.intro .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro .right .inside .down {
+  font-size: 50px;
+  color: black;
+  -webkit-animation: blink 3s infinite;
+          animation: blink 3s infinite;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.intro .right .inside h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.intro .right .inside h2 {
+  font-size: 35px;
+}
+
+.intro .right .inside h3 {
+  font-size: 30px;
+}
+
+.intro .right .inside .ityped-cursor {
+  font-size: 2.2rem;
+  opacity: 1;
+  -webkit-animation: blinkCur 0.5s infinite;
+  animation: blinkCur 0.5s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  color: white;
+}
+
+@-webkit-keyframes blinkCur {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinkCur {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=intro.css.map */

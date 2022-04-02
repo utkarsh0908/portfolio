@@ -17,7 +17,7 @@ const Contact = () => {
                 <div className="outer">
                     <div className="inner">
                         <div className="left">
-                            <img src="assets/contact.jpg" className="icon" />
+                            <img src={require("../../assets/contact.jpg")} alt="c" className="icon" />
                         </div>
                         <div className="right">
                             <div className="rightinner">

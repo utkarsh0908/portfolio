@@ -17,7 +17,7 @@ const Intro = () =>{
         <div className="intro" id="intro">
            <div className="left">
                 <div className="imgcontainer">
-                    <img src="assets/man.png" alt="not found"/>
+                    <img src={require("../../assets/man.png")} alt="not found"/>
                 </div>
            </div>
            <div className="right">

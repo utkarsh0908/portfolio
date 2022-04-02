@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import "./works.scss"
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 
@@ -10,22 +9,22 @@ const Works = () => {
     const data = [
         {
             id: "1",
-            img: "assets/black.png",
-            title: "Some Future Project 1",
-            desc: "Will be updated in Future"
+            img: "tap",
+            title: "T&P Cell Official Website",
+            link: "https://github.com/utkarsh0908/tap"
 
         },
         {
             id: "2",
-            img: "assets/black.png",
-            title: "Some Future Project 2",
-            desc: "Will be updated in Future"
+            img: "weatherapp",
+            title: "Weather App",
+            link: "https://github.com/utkarsh0908/WeatherApp"
         },
         {
             id: "3",
-            img: "assets/black.png",
-            title: "Some Future Project 3",
-            desc: "Will be updated in Future"
+            img: "sih",
+            title: "App for Hospital Services",
+            link: "https://github.com/utkarsh0908/Smart-India-Hackathon"
         }
     ];
 
@@ -40,9 +39,9 @@ const Works = () => {
                 <div className="slider" style={{ transform: `translateX(-${slide * 100}vw)` }}>
                     {data.map((d) => (
                         <div className="container">
-                            <img src={d.img} />
-                            <h1>{d.title}</h1>
-                            <h6>{d.desc}</h6>
+                            <div ><img src={require("../../assets/" + d.img + ".png")} alt="loading" /></div>
+                            <div >{d.title}</div>
+                            <a href={d.link} className='btn btn-outline-primary'>More info</a>
                         </div>
                     ))}
                 </div>
